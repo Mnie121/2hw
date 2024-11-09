@@ -1,0 +1,28 @@
+class initCat:
+    def __init__(self, poroda, pol, favFood, harak, likes, dislikes):
+        self.poroda = poroda
+        self.favFood = favFood
+        self.harak = harak
+        self.likes = likes
+        self.dislikes = dislikes
+        self.pol = pol
+    def opis(self):
+        return f"{self.poroda}, {self.pol}. Любит есть {self.favFood}, {self.harak} характер. Любит: {self.likes}, не любит: {self.dislikes}."
+        
+    
+cat = []
+
+cat.append(input("Порода: "))
+cat.append(input("Пол: "))
+cat.append(input("Любит есть: "))
+cat.append(input("Характер: "))
+cat.append(input("Любит: "))
+cat.append(input("Не любит: "))
+    
+
+myCat = initCat(cat[0], cat[1], cat[2], cat[3], cat[4], cat[5]) 
+print(myCat.opis())
+
+
+'''myCat = initCat("Сфинкс", "мальчик", "сырое куриное мясо", "дружелюбный", "когда ему чешут живот", "крыс")
+print(myCat.opis())'''
